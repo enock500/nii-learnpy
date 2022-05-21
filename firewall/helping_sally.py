@@ -3,7 +3,7 @@
 business_name = "Sally's Fruity Loops"
 
 #This is the list of all the fruits I'll be selling
-
+                                                                                                                                                 
 fruit_list = ["Apple", "Banana", "Cherries", "Dragon Fruit" "Fig"
                "Grapefruit", "Kiwi", "Lemon" "Lime" "Mango" "Oranges", "Pineapple"
               "Grapes" "Watermelon"]
@@ -24,8 +24,8 @@ if fruit_list[0] == "apple":
 #by adding the prices of the first 2 fruits, divide by 100 and
 #multiply by 5
 
-discount_amount = (1.35 + 1.30 / 100) * 5
-discount_percent = "discount-price"
+discount_amount = (fruit_prices_list[0]+ fruit_prices_list[1] / 100) * 5
+discount_percent = discount_amount * 100
 print("Thanks for being a valued customer! Your discount is: ", "discount-percent", "%")
 
 #'' The code below will be used to show customers a list of random fruits on sale. ''
@@ -68,3 +68,35 @@ print(customer_total)
 
 goodbye_msg = "Thanks for shopping at Sally's Fruity Loops"
 print("Your total for today is: Customer-Total")
+
+
+#SET OF GREETINGS THAT EACH CUSTOMER WOULD SEE
+print("Good Morning",'\n',"Good Afternoon", '\n', "Good Evening", '\n', "Hello", '\n' "Welcome")
+
+#Using dictionaries for 5 vegetables
+d = {"Cucumber": "$1.50", "Onions": "$2.50", "Peppers": "$3.50", "Cabbage": "$4.50", "Brocolli": "5.50"}
+#d["Cucumber"] = "$1.50"
+#d["Onions"] = "$2.50"
+#d["Peppers"] = "$3.50"
+#d["Cabbage"] = "$4.50" 
+#d["Brocolli"] = "$5.50"
+
+for key, value in d.items():
+    print("key:")
+    print(key)
+    print("value:")
+    print(value)
+    print("")
+
+#Boolean for customers cart
+x = 1 == True
+y = 1 == False
+a = True + 0
+cart_empty= False + 0
+
+print("x is:", x)
+print("y is:", y)
+print("a:", a)
+print("cart_empty:", cart_empty)
+
+
